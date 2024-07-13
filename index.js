@@ -22,6 +22,7 @@ server.use(express.json());
 server.use((req, res, next) => {
     next();
 });
+
 server.use("/products", productRouter.router);
 server.use("/users", userRouter.router);
 
